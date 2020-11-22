@@ -1,0 +1,99 @@
+html, body {
+    height:100%;
+}
+
+body {
+    background: url(../images/bg.jpg) no-repeat center fixed; 
+    background: #ECEFF1;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #396;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0px 20px;
+}
+
+.imgwidth{
+    max-width: 95%;
+}
+
+.center{
+    text-align: center;
+}
+
+/* img {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+} */
+
+#bg {
+    -webkit-user-select: none;
+    cursor: zoom-in;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+    display: table-column;
+}
+
+#clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv>div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+
+#clockdiv div>span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+
+    body,
+    #message {
+        margin-top: 0;
+        background: white;
+        box-shadow: none;
+    }
+
+    body {
+        border-top: 16px solid #ffa100;
+    }
+}

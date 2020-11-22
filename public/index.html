@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>펀치 Funch</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.9.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.9.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.9.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.9.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.9.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script src="js/howler.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div style="margin-top: 70px;">
+            <div style="text-align: center">
+                <h1>펀치 Funch : 1분 안에 탭볼을 정확히 많이 맞추세요. 칼로리 소모는 덤</h1>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-1"></div>
+            <div class="col-4">
+                <div class="text-center">
+                    <img src="images/left.jpg" class="rounded imgwidth" alt="왼쪽펀치" id="left">
+                </div>
+            </div>
+            <div class="col" style="text-align: center; vertical-align: middle;">
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col" style="vertical-align: bottom;">
+                        <h3 id="strong"></h3>
+                        <div style="vertical-align: bottom; text-align: center;">
+                            <div class="row" id="verystrong" style="height:80px;">&nbsp</div>
+                            <div class="row" id="normalstrong" style="height:80px;">&nbsp</div>
+                            <div class="row" id="good" style="height:80px;">&nbsp</div>
+                            <div class="row" style="background: blue; height:80px;">&nbsp</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="text-center">
+                    <img src="images/right.jpg" class="rounded imgwidth" alt="오른쪽펀치" id="right">
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div style="text-align: center;">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                  <div class="row">
+                    <div><input type="text" class="form-control" placeholder="몸무게를 입력해주세요." id="weight"></div>
+                    <!-- <div><a class="btn btn-primary" href="game.html" role="button" style="width:150px;">Start Game</a></div> -->
+                    <div><button type="button" class="btn btn-primary" onClick="startgame()">Start Game</button></div>
+                  </div>                   
+                    
+                </div>
+                <div class="col">
+                    <a class="btn btn-primary" href="rank.html" role="button" style="width:150px;">랭킹</a>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <div id="inputChallenger"></div>
+    </div>
+
+    <script src="js/funch.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+<body>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+  
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="/__/firebase/6.2.0/firebase-app.js"></script>
+  
+    <!-- Add Firebase products that you want to use -->
+    <script src="/__/firebase/6.2.0/firebase-auth.js"></script>
+    <script src="/__/firebase/6.2.0/firebase-firestore.js"></script>
+  </body>
+</html>
